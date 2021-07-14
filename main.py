@@ -59,3 +59,39 @@
 
 # Python packages
 # Packages/libraries contain useful functions that we can use
+# Ex: random, turtle, example games
+# To use a library, call import statement
+# Ex: import turtle
+# If you don't know the name of the function, look at the documentation
+
+# import turtle
+# wn = turtle.Screen()
+# z = turtle.Turtle()
+# z.speed(1)
+# z.forward(100)
+# z.left(90)
+# z.forward(100)
+# z.left(90)
+# z.backward(50)
+
+import turtle
+
+z = turtle.Turtle()
+z.penup()
+z.sety(100)
+z.pendown()
+
+sides = int(input("How many sides of a polygon do you want? "))
+angle = 360/sides
+play = True
+
+while play == True:
+  for shape in range(0, sides):
+    z.forward(50)
+    z.right(angle)
+  play_again = input("Do you want to play again (y/n)? ")
+  if play_again == "y":
+    sides = int(input("How many sides of a polygon do you want? "))
+    angle = 360/sides
+  else:
+    play = False
