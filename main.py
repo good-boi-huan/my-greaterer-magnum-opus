@@ -47,3 +47,15 @@
 # num2 = input("Give me a number ")
 
 # print(addNumber(num1, num2))
+
+# Multiplication Function
+# def multiply(input1, input2):
+#   output = int(input1) * int(input2)
+#   return output
+
+# num1 = input("Give me a number ")
+# num2 = input("Give me a number ")
+# print(multiply(num1, num2))
+
+# Python packages
+# Packages/libraries contain useful functions that we can use
